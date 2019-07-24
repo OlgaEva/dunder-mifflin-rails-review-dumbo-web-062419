@@ -1,0 +1,16 @@
+<h1> Employee Show Page <h1>
+<h3>
+<%= link_to "Back to All Employees", employees_path %>
+|
+<%= link_to "Dog Index Page", dogs_path %>
+<h3>
+<%= button_to "Delete", @employee, method: :delete %> 
+
+<h2>First Name: <%= @employee.first_name %></h2>
+<h2>Last Name: <%= @employee.last_name %></h2>
+<p>Alias: <%= @employee.alias %></p>
+<p>Title: <%= @employee.title %></p>
+<p>Office: <%= @employee.office %></p>
+<p>Dog: <%= @employee.dog.name %></p>
+
+<%= image_tag @employee.img_url %>
